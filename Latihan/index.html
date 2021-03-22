@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>kalkulatorJS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <div class="row">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="4"><input type="text" class="display" value="0" id="history-display" disabled></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><input type="text" class="main display" value="0" id="main-display" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><Button onclick="Operation('%')" >%</Button></td>
+                            <td><Button onclick="Operation('akar')" >&radic;</Button></td>
+                            <td><Button onclick="Operation('x2')" >X<sup>2</sup></Button></td>
+                            <td><Button onclick="Operation('1/x')" ><sup>1</sup>/X</Button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><Button class="clear-btn rmv-btn" onclick="Clear()" >Clear</Button></td>
+                            <td><Button class="rmv-btn" onclick="Remove()">&#8656</Button></td>
+                            <td><Button onclick="Ope2('/')">/</Button></td>
+                        </tr>
+                        <tr>
+                            <td><Button class="numbers" onclick="Input(1)">1</Button></td>
+                            <td><Button class="numbers" onclick="Input(2)">2</Button></td>
+                            <td><Button class="numbers" onclick="Input(3)">3</Button></td>
+                            <td><Button onclick="Ope2('*')">X</Button></td>
+                        </tr>
+                        <tr>
+                            <td><Button class="numbers" onclick="Input(4)">4</Button></td>
+                            <td><Button class="numbers" onclick="Input(5)">5</Button></td>
+                            <td><Button class="numbers" onclick="Input(6)">6</Button></td>
+                            <!-- <td><Button onclick="Ope2('-')">&mdash;</Button></td> -->
+                            <td><Button onclick="Ope2('-')">&mdash;</Button></td>
+                        </tr>
+                        <tr>
+                            <td><Button class="numbers" onclick="Input(7)">7</Button></td>
+                            <td><Button class="numbers" onclick="Input(8)">8</Button></td>
+                            <td><Button class="numbers" onclick="Input(9)">9</Button></td>
+                            <!-- <td><Button onclick="Ope2('+')">+</Button></td> -->
+                            <td><Button onclick="Ope2('+')">+</Button></td>
+                        </tr>
+                        <tr>
+                            <td><Button onclick="PlusMinus()">&PlusMinus;</Button></td>
+                            <td><Button class="numbers" onclick="Input(0)">0</Button></td>
+                            <td><Button onclick="Input('.')">,</Button></td>
+                            <td><Button class="result-btn" onclick="Result()">=</Button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

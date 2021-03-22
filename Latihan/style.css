@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(95, 111, 146);
+    margin-left: 485px;
+    margin-top: 10px;
+}
+.numbers{
+    background-color: rgb(51, 50, 50);
+    color: white;
+}
+button{
+    border-radius: 5px;
+    height: 80px;
+    width: 100px;
+    font-size: larger;
+    background-color: rgb(214, 232, 97);
+    cursor: pointer;
+    border: none;
+    display: block;
+    outline: none;
+}
+button:hover{
+    background-color: white;
+    color: #000;
+}
+.clear-btn{
+    width: 202px;
+}
+.rmv-btn{
+    color: floralwhite;
+    background-color: rgb(208, 77, 77);
+}
+.result-btn{
+    background-color: rgb(48, 245, 153);
+    
+}
+.display{
+    color: rgb(92, 89, 89);
+    height: 50px;
+    width: 400px;
+    font-size: 40px;
+}
+.main{
+    height: 100px;
+    font-size: 65px;
+    color: black;
+}
